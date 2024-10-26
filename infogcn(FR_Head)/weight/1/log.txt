@@ -1,0 +1,5 @@
+[ Tue Oct 22 12:15:17 2024 ] using warm up, epoch: 5
+[ Tue Oct 22 12:15:57 2024 ] Load weights from E:\Desktop\MS-FR-Head\infogcn(FR_Head)\work_dir\32frame_1\runs-95-12160.pt.
+[ Tue Oct 22 12:15:58 2024 ] using warm up, epoch: 5
+[ Tue Oct 22 12:18:04 2024 ] Load weights from E:\Desktop\MS-FR-Head\infogcn(FR_Head)\work_dir\32frame_1\runs-95-12160.pt.
+[ Tue Oct 22 12:18:06 2024 ] using warm up, epoch: 5

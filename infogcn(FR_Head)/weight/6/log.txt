@@ -1,0 +1,2 @@
+[ Tue Oct 22 12:58:03 2024 ] Load weights from E:\Desktop\MS-FR-Head\infogcn(FR_Head)\work_dir\FR_Head_6\runs-105-13440.pt.
+[ Tue Oct 22 12:58:04 2024 ] using warm up, epoch: 5
