@@ -13,6 +13,13 @@ github地址：https://github.com/XiaoHu22213/MS-FR-Head
 百度网盘地址：通过网盘分享的文件：MS-FR-Head
 链接: https://pan.baidu.com/s/1M97FWnI0yW9ZS4qPZ3aOIg?pwd=htvn 提取码: htvn 
 
+<<<<<<< HEAD
+权重文件地址：通过网盘分享的文件：权重文件
+链接: https://pan.baidu.com/s/16mdTLP4zdulBRF0D-hEG8A?pwd=jw4v 提取码: jw4v
+--来自百度网盘超级会员v1的分享
+
+=======
+>>>>>>> f18a5d2c9f1b61bc8e994793cc3663813712c82d
 # 环境准备
 项目基于CTR-GCN, info-gcn, FR-Head进行改进
 
@@ -26,6 +33,11 @@ pip install tensorboardX
 
 1.百度网盘获取处理完后的数据集，数据集有两种，分别位于/data文件下的原数据集 以及 /data/angle文件下的角度数据集
 
+<<<<<<< HEAD
+2.data/angle文件下有get_angle.py文件，用于获取角度数据
+
+=======
+>>>>>>> f18a5d2c9f1b61bc8e994793cc3663813712c82d
 # 模型训练
 
 模型采用双模型融合，分别为infogcn(FR_Head)和SNC-CTR-GCN两个模型。
@@ -113,4 +125,8 @@ SNC-CTR-GCN
 python ensemble.py
 
 测试集B的融合：
+<<<<<<< HEAD
 python ensemble_v2.py
+=======
+python ensemble_v2.py
+>>>>>>> f18a5d2c9f1b61bc8e994793cc3663813712c82d

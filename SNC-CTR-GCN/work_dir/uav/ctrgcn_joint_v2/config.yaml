@@ -1,0 +1,70 @@
+# command line: main2.py --phase test --weights E:\Desktop\≤‚ ‘\SNC-CTR-GCN\work_dir\uav\ctrgcn_joint_v2\runs-63-16128.pt --save-score true --config config/uav/joint.yaml
+
+base_lr: 0.1
+batch_size: 64
+config: config/uav/joint.yaml
+device:
+- 0
+eval_interval: 5
+feeder: feeders.feeder_uav.Feeder
+ignore_weights: []
+log_interval: 100
+lr_decay_rate: 0.1
+min_lr: 0.0001
+model: model.ctrgcn.Model
+model_args:
+  graph: graph.uav_human.Graph
+  graph_args:
+    labeling_mode: spatial
+  num_class: 155
+  num_person: 2
+  num_point: 17
+model_saved_name: ''
+nesterov: true
+num_epoch: 70
+num_worker: 0
+optimizer: SGD
+phase: test
+print_log: true
+save_epoch: 30
+save_interval: 1
+save_score: true
+seed: 1
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 35
+- 55
+test_batch_size: 128
+test_feeder_args:
+  bone: false
+  data_path: data/uav/v2/test_joint_B.npy
+  debug: false
+  label_path: data/uav/v2/test_label_B.npy
+  normalization: true
+  p_interval:
+  - 0.95
+  vel: false
+  window_size: 120
+train_feeder_args:
+  bone: false
+  data_path: data/uav/v2/train_joint.npy
+  debug: false
+  label_path: data/uav/v2/train_label.npy
+  normalization: true
+  p_interval:
+  - 0.5
+  - 1
+  random_choose: false
+  random_move: false
+  random_rot: true
+  random_shift: false
+  vel: false
+  window_size: 120
+warm_up_epoch: 5
+weight_decay: 0.0004
+weights: "E:\\Desktop\\\u6D4B\u8BD5\\SNC-CTR-GCN\\work_dir\\uav\\ctrgcn_joint_v2\\\
+  runs-63-16128.pt"
+work_dir: ./work_dir/uav/ctrgcn_joint_v2
